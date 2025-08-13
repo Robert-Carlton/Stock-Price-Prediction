@@ -5,25 +5,25 @@ Using AutoML tools and the PyCaret framework, the researchers trained and evalua
 
 # Highlights
 
-Motivation:
+:heavy_check_mark: Motivation
 
   * Stock price movements influence global economies, investment strategies, and individual financial security.
   * The US stock market represents ~60% of global equity value, affecting over 60% of US adults who have investments.
 
     
-Data Innovation:
+:heavy_check_mark: Data Innovation
 
   * Combined technical (price history), fundamental (economic indicators), social sentiment, and PESTEL data for a comprehensive view.
   * Data sources included free APIs (Yahoo! Finance, FRED) and paid APIs for specialized PESTEL metrics.
   * Scope: 47 unique data elements per stock, 730 days of history, 6 PESTEL categories.
 
-Modeling Approach:
+:heavy_check_mark: Modeling Approach
 
   * Used AutoML and PyCaret to test and tune models including ARIMA, Bayesian Ridge, Gradient Boosting, Random Forest, ElasticNet, AdaBoost, and LightGBM.
   * Applied five iterations of hyper-parameter tuning, blending top three models, and optimizing ensemble weights.
   * Predictions made for 1–7 days ahead.
 
-Key Findings:
+:heavy_check_mark: Key Findings
 
   * No single model consistently achieved the lowest RMSE across all stocks—model choice should be stock-specific.
   * Ensemble models were not always superior; for example:
@@ -31,13 +31,13 @@ Key Findings:
   * GOOGL best predicted by Bayesian Ridge Regression (RMSE ≈ 0.67).
   * TSLA best predicted by ARIMA (RMSE ≈ 1.02).
 
-Visualization Dashboard:
+:heavy_check_mark: Visualization Dashboard
 
   * Displays historical and forecasted prices for multiple models.
   * Shows PESTEL factor trends for each stock.
   * Provides comparative metrics for similar companies to contextualize predictions.
 
-Future Directions:
+:heavy_check_mark: Future Directions
   * Test different input datasets per stock to improve accuracy.
   * Evaluate the impact of individual data categories on predictions.
   * Extend forecast horizons to 30 or 90 days.
